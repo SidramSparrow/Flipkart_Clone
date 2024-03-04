@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Flipkart</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- icon -->
+    <link rel="icon" href="data:image/jpeg;base64,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" type="image/icon type">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- For Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <header>
+        <!-- Nav tabs -->
+        <ul class="nav nav-fill nav-tabs p-3" id="navId">
+            <li class="nav-item">
+                <a href="" class="nav-brand">
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_plus-055f80.svg" alt="">
+                </a>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-light d-flex">
+                    <i class="fa fa-search p-2"></i>
+                    <input type="search" class="form-control" id="search">
+                </button>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <p class="dropdown-toggle text-dark" id="name">
+                        <i class="fa fa-user-circle text-dark"></i>
+                    Name
+                </p>
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#tab2Id">Action</a>
+                    <a class="dropdown-item" href="#tab3Id">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#tab4Id">Action</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#tab5Id" class="nav-link">
+                    <div class="cart">
+                        <span class="counter text-danger">0</span>
+                        <i class="fa fa-cart-arrow-down text-dark p-1"></i><b class="text-dark">cart</b>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark">
+                    <i class="fa fa-camera text-dark"></i> Become a Seller
+                </a>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                    <button id="my-dropdown" class="btn btn-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="my-dropdown">
+                        <a class="dropdown-item active" href="#">
+                            <i class="fa fa-bell"></i><p>Notification</p>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-headphones"></i><p>24X7 Customer Care</p>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-bar-chart"></i><p>Advertise</p>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-download"></i><p>Download App</p>
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+        </div>
+      </header>
+      <main>
+        <div class="container-fluid container-fluid-1">
+            <div class="container-item"><a href=""><img src="https://rukminim1.flixcart.com/flap/32/32/image/29327f40e9c4d26b.png?q=100" alt=""><br>Grocery</a></div>
+            <div class="container-item"><a href=""><img src="https://rukminim1.flixcart.com/flap/32/32/image/22fddf3c7da4c4f4.png?q=100" alt=""><br>Mobiles</a></div>
+            <div class="container-item"><a href="" class="dropdown-toggle"><img src="https://rukminim1.flixcart.com/fk-p-flap/32/32/image/0d75b34f7d8fbcb3.png?q=100" alt=""><br>Fashion</a></div>
+            <div class="container-item"><a href="" class="dropdown-toggle"><img src="https://rukminim1.flixcart.com/flap/32/32/image/69c6589653afdb9a.png?q=100" alt=""><br>Electronics</a></div>
+            <div class="container-item"><a href="" class="dropdown-toggle"><img src="https://rukminim1.flixcart.com/flap/32/32/image/ab7e2b022a4587dd.jpg?q=100" alt=""><br>Home & Furniture</a></div>
+            <div class="container-item"><a href=""><img src="https://rukminim1.flixcart.com/fk-p-flap/32/32/image/0139228b2f7eb413.jpg?q=100" alt=""><br>Appliances</a></div>
+            <div class="container-item"><a href=""><img src="https://rukminim1.flixcart.com/flap/32/32/image/71050627a56b4693.png?q=100" alt=""><br>Travel</a></div>
+            <div class="container-item"><a href="" class="dropdown-toggle"><img src="https://rukminim1.flixcart.com/flap/32/32/image/dff3f7adcf3a90c6.png?q=100" alt=""><br>Beauty,Toys & More</a></div>
+            <div class="container-item"><a href="" class="dropdown-toggle"><img src="https://rukminim1.flixcart.com/fk-p-flap/32/32/image/05d708653beff580.png?q=100" alt=""><br>Two Wheelers</a></div>
+        </div>
+        <div id="my-carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li class="active" data-target="#my-carousel" data-slide-to="0" aria-current="location"></li>
+                <li data-target="#my-carousel" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href=""><img class="d-block w-100" src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/daeef95a3c866045.jpg?q=20" alt=""></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5></h5>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href=""><img class="d-block w-100" src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/eae7bd669ddd2528.jpg?q=20" alt=""></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5></h5>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href=""><img class="d-block w-100" src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/48d0150e5dd6fd9c.jpg?q=20" alt=""></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5></h5>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href=""><img class="d-block w-100" src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/282e51d8bab4dc56.png?q=20" alt=""></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5></h5>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#my-carousel" data-slide="prev" role="button">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#my-carousel" data-slide="next" role="button">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <section class="section-1">
+            <div class="container-item">
+                <a href="" class="item-link">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20" alt="">
+                </a>
+            </div>
+            <div class="container-item">
+                <a href="" class="item-link">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/22e305bf45e2e1a2.jpeg?q=20" alt="">
+                </a>
+            </div>
+            <div class="container-item">
+                <a href="" class="item-link">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/c3146ff3077e7744.jpg?q=20" alt="">
+                </a>
+            </div>
+            <div class="container-item">
+                <a href="" class="item-link">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/da18c32a88a9950b.jpg?q=20" alt="">
+                </a>
+            </div>
+        </section>
+        <section class="section-2">
+            <h3>Top Deals</h3>
+            <div class="card-container">
+                <div class="card">
+                    <img class="card-img-top" src="sas.jpeg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Latest Boots</h5>
+                        <p class="card-text"><button class="btn btn-danger text-light">25% off</button></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="sas.jpeg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Latest Boots</h5>
+                        <p class="card-text"><button class="btn btn-danger text-light">25% off</button></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="sas.jpeg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Latest Boots</h5>
+                        <p class="card-text"><button class="btn btn-danger text-light">25% off</button></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="sas.jpeg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Latest Boots</h5>
+                        <p class="card-text"><button class="btn btn-danger text-light">25% off</button></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="sas.jpeg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Latest Boots</h5>
+                        <p class="card-text"><button class="btn btn-danger text-light">25% off</button></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="sas.jpeg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Latest Boots</h5>
+                        <p class="card-text"><button class="btn btn-danger text-light">25% off</button></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="sas.jpeg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Latest Boots</h5>
+                        <p class="card-text"><button class="btn btn-danger text-light">25% off</button></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="sas.jpeg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Latest Boots</h5>
+                        <p class="card-text"><button class="btn btn-danger text-light">25% off</button></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="sas.jpeg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Latest Boots</h5>
+                        <p class="card-text"><button class="btn btn-danger text-light">25% off</button></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="sas.jpeg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Latest Boots</h5>
+                        <p class="card-text"><button class="btn btn-danger text-light">25% off</button></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="sas.jpeg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Latest Boots</h5>
+                        <p class="card-text"><button class="btn btn-danger text-light">25% off</button></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="sas.jpeg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Latest Boots</h5>
+                        <p class="card-text"><button class="btn btn-danger text-light">25% off</button></p>
+                    </div>
+                </div>
+                <a href="" class="prev carousel-control-prev"><i class="fa fa-angle-left"></i></a>
+                <a href="" class="next carousel-control-next"><i class="fa fa-angle-right"></i></a>
+            </div>
+        </section>
+        <section class="section-3">
+            <div class="container-item">
+                <div class="card-img">
+                    <a href="" class="card-img-link"><img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/1aabe4e0fb89f7a1.jpg?q=20" alt="" class="img-link">
+                    </a>
+                </div>
+                <div class="card-img">
+                    <a href="" class="card-img-link"><img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/e28e43f7ce56833d.jpg?q=20" alt="" class="img-link">
+                    </a>
+                </div>
+                <div class="card-img">
+                    <a href="" class="card-img-link"><img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/da18c32a88a9950b.jpg?q=20" alt="" class="img-link">
+                    </a>
+                </div>
+                <div class="card-img">
+                    <a href="" class="card-img-link"><img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/9926b000d9e06f79.jpg?q=20" alt="" class="img-link">
+                    </a>
+                </div>
+                <div class="card-img">
+                    <a href="" class="card-img-link">
+                        <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/3dbceec64ee01bdc.jpg?q=20" alt="" class="img-link">
+                    </a>
+                </div>
+                <div class="card-img">
+                    <a href="" class="card-img-link">
+                        <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/6f23fc1a646a9c64.jpg?q=20" alt="" class="img-link">
+                    </a>
+                </div>
+                <div class="card-img">
+                    <a href="" class="card-img-link">
+                        <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/30527c6a71197cda.jpg?q=20" alt="" class="img-link">
+                    </a>
+                </div>
+                <div class="card-img">
+                    <a href="" class="card-img-link">
+                        <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/fe42cb569b6a602a.jpg?q=20" alt="" class="img-link">
+                    </a>
+                </div>
+                <div class="card-img">
+                    <a href="" class="card-img-link">
+                        <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/8c847eea35140ed6.jpg?q=20" alt="" class="img-link">
+                    </a>
+                </div>
+                <div class="card-img">
+                    <a href="" class="card-img-link">
+                        <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/ae3a176640c25f34.jpeg?q=20" alt="" class="img-link">
+                    </a>
+                </div>
+                <div class="card-img">
+                    <a href="" class="card-img-link">
+                        <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/b542d3cf44569508.jpg?q=20" alt="" class="img-link">
+                    </a>
+                </div>
+                <div class="card-img">
+                    <a href="" class="card-img-link">
+                        <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/7831c7b7305b24a1.jpg?q=20" alt="" class="img-link">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="section-2">
+            <h3>Top Deals</h3>
+            <div class="card-container">
+                <div class="card">
+                    <img class="card-img-top" src="sas.jpeg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Latest Boots</h5>
+                        <p class="card-text"><button class="btn btn-danger text-light">25% off</button></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="sas.jpeg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Latest Boots</h5>
+                        <p class="card-text"><button class="btn btn-danger text-light">25% off</button></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="sas.jpeg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Latest Boots</h5>
+                        <p class="card-text"><button class="btn btn-danger text-light">25% off</button></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="sas.jpeg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Latest Boots</h5>
+                        <p class="card-text"><button class="btn btn-danger text-light">25% off</button></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="sas.jpeg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Latest Boots</h5>
+                        <p class="card-text"><button class="btn btn-danger text-light">25% off</button></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="sas.jpeg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Latest Boots</h5>
+                        <p class="card-text"><button class="btn btn-danger text-light">25% off</button></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="sas.jpeg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Latest Boots</h5>
+                        <p class="card-text"><button class="btn btn-danger text-light">25% off</button></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="sas.jpeg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Latest Boots</h5>
+                        <p class="card-text"><button class="btn btn-danger text-light">25% off</button></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="sas.jpeg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Latest Boots</h5>
+                        <p class="card-text"><button class="btn btn-danger text-light">25% off</button></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="sas.jpeg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Latest Boots</h5>
+                        <p class="card-text"><button class="btn btn-danger text-light">25% off</button></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="sas.jpeg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Latest Boots</h5>
+                        <p class="card-text"><button class="btn btn-danger text-light">25% off</button></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="sas.jpeg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Latest Boots</h5>
+                        <p class="card-text"><button class="btn btn-danger text-light">25% off</button></p>
+                    </div>
+                </div>
+                <a href="" class="prev carousel-control-prev"><i class="fa fa-angle-left"></i></a>
+                <a href="" class="next carousel-control-next"><i class="fa fa-angle-right"></i></a>
+            </div>
+        </section>
+        <section class="section-4 pb-3">
+            <div class="container-item d-flex justify-content-center">
+                <div class="item-1 p-2 bg-primary ml-2"><a class="d-flex p-3 bg-light" href=""><img class="p-1" src="https://static-assets-web.flixcart.com/www/linchpin/batman-returns/images/fk-default-image-75ff340b.png?q=90" alt=""><p class="text-dark font-weight-bold">Grocery Sale is Live! <br> Atta,oil & more <br> <b>Up to 50% off</b></p></a></div>
+                <div class="item-2 p-2 bg-primary ml-2"><a class="d-flex p-3 bg-light" href=""><img class="p-1" src="https://static-assets-web.flixcart.com/www/linchpin/batman-returns/images/fk-default-image-75ff340b.png?q=90" alt=""><p class="text-dark font-weight-bold">Snacks & Bevarages! <br>Big saving on grocery<br> <b>Up to 80% off</b></p></a></div>
+                <div class="item-3 p-2 bg-primary ml-2"><a class="d-flex p-3 bg-light" href=""><img class="p-1" src="https://static-assets-web.flixcart.com/www/linchpin/batman-returns/images/fk-default-image-75ff340b.png?q=90" alt=""><p class="text-dark font-weight-bold">Packages Foods! <br> Noodle , pasta & more <br> <b>Up to 80% off</b></p></a></div>
+                <div class="item-4 p-2 bg-warning"><a class="d-flex p-3 bg-light" href=""><img class="p-1" src="https://static-assets-web.flixcart.com/www/linchpin/batman-returns/images/fk-default-image-75ff340b.png?q=90" alt=""><p class="text-dark font-weight-bold">......... <br> Pressure Cookers <br> <b>From ease</b></p></a></div>
+            </div>
+        </section>
+        
+      </main>
+      <footer class="bg-dark text-light">
+        <section class="section-footer">
+            <div class="footer-item">
+                <p>About</p>
+                <a href="">Contact Us</a>
+                <a href="">About Us</a>
+                <a href="">Careers</a>
+                <a href="">Flipkart stories</a>
+                <a href="">priece</a>
+                <a href="">corporate information</a>
+            </div>
+            <div class="footer-item">
+                <p>Group up Companies</p>
+                <a href="">Mytra</a>
+                <a href="">Flipkart Wholesale</a>
+                <a href="">cleartrip</a>
+                <a href="">shopsy</a>
+            </div>
+            <div class="footer-item">
+                <p>Help</p>
+                <a href="">payments</a>
+                <a href="">Shipping</a>
+                <a href="">Cancellation & Returns</a>
+                <a href="">FAQ</a>
+                <a href="">Report infringement</a>
+            </div>
+            <div class="footer-item">
+                <p>Consumer Policy</p>
+                <a href="">Cancellation & Returns</a>
+                <a href="">Terms of Use</a>
+                <a href="">Security</a>
+                <a href="">Privacy</a>
+                <a href="">SiteMap</a>
+                <a href="">Grievence Redressal</a>
+            </div>
+            <div class="footer-item-line p-1 m-1 w-25 text-center">|</div>
+            <div class="footer-item">
+                <p>Mail us :</p>
+                <a href="">Flipkart Inter Private Limited</a>
+                <a href="">Building Alyssa, Begonia & CLove Embassy Tech Villege, Outer Ring Road , Devarabessanahalli Village, Bengaluru, 580103</a>
+            </div>
+            <div class="footer-item">
+                <p>Registered office Address :</p>
+                <a href="">Flipkart Inter Private Limited</a>
+                <a href="">Building Alyssa, Begonia & CLove Embassy Tech Villege, Outer Ring Road , Devarabessanahalli Village, Bengaluru, 580103</a>
+            </div>
+            
+        </section>
+      </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

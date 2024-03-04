@@ -1,0 +1,99 @@
+body{
+    background-color: rgb(245, 245, 245);
+}
+.counter{
+    position: absolute;
+    padding-left: 15px;
+    padding-bottom: 25px;
+}
+.container-fluid-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    padding: 25px 20px;
+}
+.container-fluid-1 a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 0.5px;
+}
+.container-fluid-1 img{
+    width: 50px;   
+}
+.container-item{
+    text-align: center;
+}
+
+.section-1{
+    display: flex;
+    width: 100%;
+    padding: 50px 0px;
+}
+.section-1 .container-item{
+    width: 100%;
+    margin: 10px;
+}
+.section-1 .container-item img{
+    width: 100%;
+}
+.section-2{
+    overflow:auto;
+}
+.section-2 .card-container{
+ display: inline-flex;
+    
+}
+.section-2 .card-container .card{
+    width: 210px;
+    margin: 10px;
+}
+
+#search{
+    width: 400px;
+}
+
+.prev{
+    position: absolute;
+    height: 130px;
+    width: 100px;
+    color: black;
+    font-size: 30px;
+    background-color: white;
+    top: 120vh;
+}
+.next{
+    position: absolute;
+    height: 130px;
+    width: 100px;
+    color: black;
+    font-size: 30px;
+    background-color: white;
+    top: 120vh;
+}
+
+.section-3{
+    width: 100%;
+}
+
+.section-3 .container-item{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.section-3 .container-item .card-img{
+    padding: 10px;
+}
+
+.section-3 .container-item img{
+    width: 100%;
+}
+.section-footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 20px;
+}
+.section-footer .footer-item{
+    margin: 20px;
+}
